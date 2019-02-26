@@ -18,7 +18,7 @@ RUN tar -zxf git-2.20.1.tar.gz \
     && make install
 
 
-FROM centos:6
+FROM centos:7.0.1406
 
 COPY --from=builder /workdir/git /workdir/git
 
